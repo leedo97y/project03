@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<script>
+
+</script>
+<body>
+<div>
+    <!-- 왼쪽  -->
+    <div class="temp-side">
+        <span class="now-temp" id="cur_temp_info"></span>
+        <span class="now-city" id="city_info"></span>
+        <span class="now-icon" id="icon-info"></span>
+        <!-- <div class="now-weather"></div> -->
+    </div>
+    <!-- 오른쪽 -->
+    <div class="blackbox">
+        <div class="weather-side">
+            <div class="dropdown">
+                <form>
+                    <select name="city" class="cities" id="selectGeo">
+                        <option value="현위치">현위치</option>
+                        <option value="서울">서울</option>
+                        <option value="강릉">강릉</option>
+                        <option value="대전">대전</option>
+                        <option value="대구">대구</option>
+                        <option value="광주">광주</option>
+                        <option value="부산">부산</option>
+                        <option value="제주">제주</option>
+                    </select>
+                </form>
+            </div>
+            <div class="clothes-box">
+                <div class="clothes">
+
+                </div>
+                <div class="comment">
+                    옷차림에 관한 문구
+                </div>
+            </div>
+            <table>
+                <thead>
+                <tr class="clock">
+                    <td class="info">2022년 02월 12일</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="info">체감 온도</td>
+                    <td class="temp"> <span id="feel_temp_info"></span> ℃</td>
+                </tr>
+                <tr>
+                    <td class="info">최저 / 최고 온도</td>
+                    <td class="temp"><span id="min_temp_info"></span>℃ / <span id="max_temp_info"></span>℃</td>
+                </tr>
+                <tr>
+                    <td class="info">습도</td>
+                    <td class="temp"><span id="humidity_info"></span>%</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/weather.js"></script>
+<script type="text/javascript" src="./js/date.js"></script>
+
+</body>
+</html>
